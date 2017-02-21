@@ -1,8 +1,10 @@
 import React from 'react';
 import { render } from 'react-dom';
 import { AppContainer } from 'react-hot-loader';
+
 import configureStore from './store/configureStore';
-import Root from './containers/Root';
+import renderer from './style/configureFela';
+import Root from './Root';
 
 const store = configureStore();
 
@@ -10,6 +12,7 @@ render(
   <AppContainer>
     <Root
       store={store}
+      renderer={renderer}
     />
   </AppContainer>
 , document.getElementById('root')
@@ -17,14 +20,14 @@ render(
 
 if (module.hot) {
   module.hot.accept(
-    './containers/Root'
+    './Root'
   , () => {
-      const RootContainer = require('./containers/Root').default;
+      const RootContainer = require('./Root').default;
       render(
         <AppContainer>
           <RootContainer
-            title='Pure Components Rock! yay!  🎸🎶'
             store={store}
+            renderer={renderer}
           />
         </AppContainer>
       , document.getElementById('root')

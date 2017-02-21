@@ -8,3 +8,7 @@ export const setSubject =
       }
     );
   };
+
+export default
+  { setSubject
+  };

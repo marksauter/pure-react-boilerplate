@@ -23,12 +23,12 @@ npm install
 As of this writing:
 
 **Cloud9 (c9.io)**
-HOST='0.0.0.0' 
+HOST='0.0.0.0'
 PORT=8080
 
 **Nitrous.io**
 HOST='0.0.0.0'
-PORT=3000 
+PORT=3000
 
 The environment variables can be set locally in bash terminal using *export* (e.g., export PORT=8080).)
 

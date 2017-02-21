@@ -1,15 +1,21 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import Title from '../components/Title';
-import Hello from '../components/Hello';
-import * as Actions from '../actions';
+import { Link } from 'react-router';
 
-const App =
+import Header from '../components/Header';
+import Hello from '../components/Hello';
+import ActionCreators from '../actions';
+
+const Home =
   ({ subject, actions }) => {
     return (
       <div>
-        <Title title='Pure Components Rock! yay!  🎸🎶' />
+        <Header
+          text='Pure Components Rock! yay!  🎸🎶'
+          color='purple'
+          fontSize ={17}
+        />
         <Hello subject={subject} setSubject={actions.setSubject} />
       </div>
     );
@@ -27,9 +33,9 @@ const mapState =
 const mapDispatch =
   dispatch => {
     return (
-      { actions: bindActionCreators(Actions, dispatch)
+      { actions: bindActionCreators(ActionCreators, dispatch)
       }
     );
   };
 
-export default connect(mapState, mapDispatch)(App);
+export default connect(mapState, mapDispatch)(Home);
