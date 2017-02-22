@@ -8,6 +8,11 @@ module.exports =
     , 'webpack-hot-middleware/client'
     , './src/index'
     ]
+  , externals:
+    { 'react/addons': 'react'
+    , 'react/lib/ExecutionEnvironment': 'react'
+    , 'react/lib/ReactContext': 'react'
+    }
   , output:
     { path: path.join(__dirname, 'dist')
     , filename: 'bundle.js'

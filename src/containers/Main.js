@@ -4,7 +4,7 @@ import { IndexLink, Link } from 'react-router';
 const { object } = React.PropTypes;
 
 const Main =
-  (props, context) => {
+  (props) => {
     return (
       <div>
         <nav>

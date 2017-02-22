@@ -2,8 +2,8 @@ import React from 'react';
 import { render } from 'react-dom';
 import { AppContainer } from 'react-hot-loader';
 
-import configureStore from './store/configureStore';
-import renderer from './style/configureFela';
+import configureStore from './configureStore';
+import renderer from './configureFela';
 import Root from './Root';
 
 const store = configureStore();

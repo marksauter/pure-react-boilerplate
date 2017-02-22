@@ -15,6 +15,11 @@ module.exports =
       , 'redux'
       ]
     }
+  , externals:
+    { 'react/addons': 'react'
+    , 'react/lib/ExecutionEnvironment': 'react'
+    , 'react/lib/ReactContext': 'react'
+    }
   , output:
     { path: path.join(__dirname, 'build')
     , filename: '[name].[chunkhash].js'
