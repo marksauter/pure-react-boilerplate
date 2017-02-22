@@ -2,8 +2,8 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
-import Header from '../../components/Header';
-import Hello from '../../components/Hello';
+import Header from 'components/Header';
+import Hello from 'components/Hello';
 import ActionCreators from './actions';
 
 const Home =
