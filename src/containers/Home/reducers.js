@@ -1,8 +1,8 @@
-import { SET_SUBJECT } from './constants';
+import SET_SUBJECT from './constants';
 
 const initialState = 'World';
 
-export const subject =
+const subject =
   (state = initialState, action) => {
     switch (action.type) {
       case SET_SUBJECT:
@@ -11,3 +11,5 @@ export const subject =
         return state;
     }
   };
+
+export default subject;

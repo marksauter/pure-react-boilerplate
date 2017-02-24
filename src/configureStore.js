@@ -14,7 +14,7 @@ const enhancer = compose(
 );
 
 const configureStore =
-  initialState => {
+  (initialState) => {
     const store = createStore(rootReducer, initialState, enhancer);
 
     if (module.hot) {

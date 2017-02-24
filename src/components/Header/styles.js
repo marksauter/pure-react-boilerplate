@@ -1,5 +1,5 @@
 const containerRule =
-  props => (
+  () => (
     { padding: '20px'
     , backgroundColor: 'teal'
     }

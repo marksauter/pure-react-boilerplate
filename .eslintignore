@@ -1,2 +1,2 @@
-src/test
-src/test-fixtures
+src/test.js
+webpack.config.*.js
